@@ -57,7 +57,6 @@
             <p class="my-2" id="text">What is your name?</p>
             <form ref="form">
               <b-form-group
-                label="Name"
                 label-for="name-input"
                 invalid-feedback="Name is required"
                 :state="nameState"
@@ -118,47 +117,36 @@
       </v-col>
     </v-row>
     <v-container class="wrap">
-      <div>
-        <p>
-          I am so glad that my sons learning specialist referred us. 1. The
-          experience was flawless and seamless from beginning to end. It was
-          completely uncomplicated took a lot of anxiety around testing my son
-          away and made it feel really normal. 2. The doctor was beyond great
-          with my son. showed him so much grace allowed him to relax and really
-          be present while he was being tested it was an amazing experience for
-          him and our family. 3. The assessment was very thorough and detailed
-          it allows my family to create a strategy and a plan with his teachers
-          and learning support specialist that has my son really thriving in
-          this new school year.
-        </p>
+      <div class="review-box">
+        <v-img :src="require('../assets/a.png')" class="pic" />
+        <p class="title">Learning differences assessment</p>
+        <div class="blah">
+          <p>Licensed PhD/PsyD</p>
+          <p>psychologist DSM-5 diagnosis</p>
+          <p>Report within a week</p>
+          <p>Optional giftedness report (+$95)</p>
+        </div>
       </div>
-      <div>
-        <p>
-          I am so glad that my sons learning specialist referred us. 1. The
-          experience was flawless and seamless from beginning to end. It was
-          completely uncomplicated took a lot of anxiety around testing my son
-          away and made it feel really normal. 2. The doctor was beyond great
-          with my son. showed him so much grace allowed him to relax and really
-          be present while he was being tested it was an amazing experience for
-          him and our family. 3. The assessment was very thorough and detailed
-          it allows my family to create a strategy and a plan with his teachers
-          and learning support specialist that has my son really thriving in
-          this new school year.
-        </p>
+      <div class="review-box">
+        <v-img :src="require('../assets/b.png')" class="pic" />
+        <h2 class="title">Attention differences assessment</h2>
+        <div class="blah">
+          <p>Same features as a learning differences assessment</p>
+          <p>Conducted as a separate sitting</p>
+          <p>
+            Can be combined with your learning differences report
+            retrospectively
+          </p>
+        </div>
       </div>
-      <div>
-        <p>
-          I am so glad that my sons learning specialist referred us. 1. The
-          experience was flawless and seamless from beginning to end. It was
-          completely uncomplicated took a lot of anxiety around testing my son
-          away and made it feel really normal. 2. The doctor was beyond great
-          with my son. showed him so much grace allowed him to relax and really
-          be present while he was being tested it was an amazing experience for
-          him and our family. 3. The assessment was very thorough and detailed
-          it allows my family to create a strategy and a plan with his teachers
-          and learning support specialist that has my son really thriving in
-          this new school year.
-        </p>
+      <div class="review-box">
+        <v-img :src="require('../assets/c.png')" class="pic" />
+        <h2 class="title">Follow-up support</h2>
+        <div class="blah">
+          <p>50-minute session with your psychologist</p>
+          <p>General follow-up appointments</p>
+          <p>School IEP and learning plan advocacy</p>
+        </div>
       </div>
     </v-container>
   </v-container>
@@ -246,8 +234,8 @@ export default {
 .btn-primary {
   opacity: 0 !important;
 }
-.bt {
-  font-size: 27px;
+button.btn.btn-secondary {
+  font-size: 23px;
   background-color: coral;
   display: inline-block;
   padding: 0.35em 1.2em;
@@ -274,6 +262,54 @@ export default {
 .wrap {
   display: flex;
   flex-direction: row;
+  max-height: 592px;
+}
+.review-box {
+  width: 33.33333%;
+  max-width: 528px;
+  min-height: 504px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 32px;
+  background-color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+  width: 332px;
+  min-height: 322px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 12px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0px 10px 16px -8px rgb(0 0 0 / 20%);
+}
+.title {
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 700;
+  line-height: 1;
+  overflow: hidden;
+  margin-bottom: 24px;
+  font-weight: 800;
+}
+
+.blah {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: inherit;
+  width: 100%;
+}
+.pic {
+  display: block;
+  width: auto;
+  margin: 20px 20px 32px;
+  min-height: 72px;
+  max-height: 72px;
 }
 </style>
 
