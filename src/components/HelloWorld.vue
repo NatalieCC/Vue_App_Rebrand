@@ -124,12 +124,12 @@
           Comprehensive assessment for dyslexia, dyscalculia, and other learning
           differences in reading, math, and writing.
         </p>
-        <div class="blah">
-          <p>Licensed PhD/PsyD</p>
-          <p>psychologist DSM-5 diagnosis</p>
-          <p>Report within a week</p>
-          <p>Optional giftedness report (+$95)</p>
-        </div>
+        <ul class="blah">
+          <li>Licensed PhD/PsyD</li>
+          <li>psychologist DSM-5 diagnosis</li>
+          <li>Report within a week</li>
+          <li>Optional giftedness report (+$95)</li>
+        </ul>
       </div>
       <div class="review-box">
         <v-img :src="require('../assets/b.png')" class="pic" />
@@ -138,14 +138,14 @@
           Comprehensive assessment for ADHD. Available as an add-on to a
           specific learning differences assessment.
         </p>
-        <div class="blah">
-          <p>Same features as a learning differences assessment</p>
-          <p>Conducted as a separate sitting</p>
-          <p>
+        <ul class="blah">
+          <li>Same features as a learning differences assessment</li>
+          <li>Conducted as a separate sitting</li>
+          <li>
             Can be combined with your learning differences report
             retrospectively
-          </p>
-        </div>
+          </li>
+        </ul>
       </div>
       <div class="review-box">
         <v-img :src="require('../assets/c.png')" class="pic" />
