@@ -54,7 +54,7 @@
             @show="resetModal"
             @hidden="resetModal"
           >
-            <p class="my-2" id="text">What is your name?</p>
+            <p class="my-2">What is your name?</p>
             <form ref="form">
               <b-form-group
                 label-for="name-input"
@@ -120,6 +120,10 @@
       <div class="review-box">
         <v-img :src="require('../assets/a.png')" class="pic" />
         <p class="title">Learning differences assessment</p>
+        <p>
+          Comprehensive assessment for dyslexia, dyscalculia, and other learning
+          differences in reading, math, and writing.
+        </p>
         <div class="blah">
           <p>Licensed PhD/PsyD</p>
           <p>psychologist DSM-5 diagnosis</p>
@@ -130,6 +134,10 @@
       <div class="review-box">
         <v-img :src="require('../assets/b.png')" class="pic" />
         <h2 class="title">Attention differences assessment</h2>
+        <p>
+          Comprehensive assessment for ADHD. Available as an add-on to a
+          specific learning differences assessment.
+        </p>
         <div class="blah">
           <p>Same features as a learning differences assessment</p>
           <p>Conducted as a separate sitting</p>
@@ -142,11 +150,15 @@
       <div class="review-box">
         <v-img :src="require('../assets/c.png')" class="pic" />
         <h2 class="title">Follow-up support</h2>
-        <div class="blah">
-          <p>50-minute session with your psychologist</p>
-          <p>General follow-up appointments</p>
-          <p>School IEP and learning plan advocacy</p>
-        </div>
+        <p>
+          Ongoing support appointments with your psychologist. Available as an
+          assessment add-on.
+        </p>
+        <ul class="blah">
+          <li>50-minute session with your psychologist</li>
+          <li>General follow-up appointments</li>
+          <li>School IEP and learning plan advocacy</li>
+        </ul>
       </div>
     </v-container>
   </v-container>
@@ -296,20 +308,23 @@ button.btn.btn-secondary {
   margin-bottom: 24px;
   font-weight: 800;
 }
-
 .blah {
   font-size: 16px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 700;
   color: inherit;
   width: 100%;
 }
 .pic {
   display: block;
-  width: auto;
+  width: 5.313rem;
   margin: 20px 20px 32px;
   min-height: 72px;
   max-height: 72px;
+  max-width: 100%;
+}
+ul.blah {
+  list-style-type: square;
 }
 </style>
 
