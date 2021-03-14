@@ -38,7 +38,6 @@
         ></typical>
 
         <h2 class="subheading font-weight-regular">
-          <!-- Discover your difference, harness your strengths. -->
           <br />Tele-assessments and support for learning differences.
         </h2>
         <br />
