@@ -20,6 +20,7 @@
           aria-controls="drawer-name"
           aria-expanded="false"
           @click="openClickHandler"
+          class="about"
         >
           About Us
           <!--          <v-icon>mdi-open-in-new</v-icon>-->
@@ -40,7 +41,7 @@ import HelloWorld from "./components/HelloWorld";
 // import Reviews from "./components/Reviews";
 import About from "./components/About";
 export default {
-  name: "Appnew",
+  name: "App",
 
   components: {
     HelloWorld,
@@ -112,3 +113,22 @@ export default {
   // window.addEventListener('clickHandler')
 };
 </script>
+<style>
+.about {
+  font-size: 20px;
+  background-color: coral;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+}
+</style>
