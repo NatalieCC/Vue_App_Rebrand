@@ -4,7 +4,7 @@
       <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
       <div class="drawer__wrapper">
         <div class="drawer__header">
-          <div class="drawer__title">Header Title</div>
+          <img src="/src/assets/pLogo.png" />
           <button
             class="drawer__close"
             data-drawer-close
@@ -13,7 +13,7 @@
           ></button>
         </div>
         <div class="drawer__content">
-          <p>Who's it for</p>
+          <h3>Who's it for</h3>
           <p>
             An assessment with a Polygon psychologist is appropriate for anyone
             age 8 or older.
@@ -25,23 +25,16 @@
             evaluation at any age can be an important step toward receiving
             proper support.
           </p>
-          <div style="padding: 100px 0"></div>
-          <p>How it works</p>
+          <div style="padding: 50px 0"></div>
+          <h3>How it works</h3>
           <p>Four simple steps to get the answers you need</p>
           <p>1. Consultation and intake</p>
           <p>2. Tele-assessments</p>
           <p>2. Report within a week</p>
           <p>2. Follow-up Support</p>
-          <div style="padding: 100px 0"></div>
-          <p>What out custoemrs are saying</p>
-          <div style="padding: 100px 0"></div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut
-            exercitationem laborum vero tenetur officiis facilis eveniet sunt
-            quo voluptatibus sit reiciendis, iusto quia et quidem? Dolores dolor
-            et necessitatibus.
-          </p>
-          <div style="padding: 100px 0"></div>
+          <div style="padding: 50px 0"></div>
+          <h3>What our custoemrs are saying</h3>
+          <!-- <div style="padding: 100px 0"></div> -->
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut
             exercitationem laborum vero tenetur officiis facilis eveniet sunt
