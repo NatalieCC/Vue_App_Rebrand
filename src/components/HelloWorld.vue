@@ -113,51 +113,64 @@
           Get Started
         </button> -->
         <!-- <hello v-if="showHello" @close="showHello = false" /> -->
+        <a href="https://www.trustpilot.com/review/hellopolygon.com">
+          <p class="badge-link__rating-wrap">
+            <span class="badge-link__rating__star">★</span
+            ><span class="badge-link__rating__star">★</span
+            ><span class="badge-link__rating__star">★</span
+            ><span class="badge-link__rating__star">★</span>
+            <span class="badge-link__rating__star">★</span>
+            <span>Rated 5/5</span>
+          </p>
+        </a>
       </v-col>
     </v-row>
     <v-container class="wrap">
       <div class="review-box">
         <v-img :src="require('../assets/a.png')" class="pic" />
         <p class="title">Learning differences assessment</p>
-        <p>
-          Comprehensive assessment for dyslexia, dyscalculia, and other learning
-          differences in reading, math, and writing.
-        </p>
-        <ul class="blah">
+
+        <div class="blah">
+          <div>
+            Comprehensive assessment for dyslexia, dyscalculia, and other
+            learning differences in reading, math, and writing.
+          </div>
           <li>Licensed PhD/PsyD</li>
           <li>psychologist DSM-5 diagnosis</li>
           <li>Report within a week</li>
           <li>Optional giftedness report (+$95)</li>
-        </ul>
+        </div>
       </div>
       <div class="review-box">
         <v-img :src="require('../assets/b.png')" class="pic" />
-        <h2 class="title">Attention differences assessment</h2>
-        <p>
-          Comprehensive assessment for ADHD. Available as an add-on to a
-          specific learning differences assessment.
-        </p>
-        <ul class="blah">
+        <div class="title">Attention differences assessment</div>
+
+        <div class="blah">
+          <div>
+            Comprehensive assessment for ADHD. Available as an add-on to a
+            specific learning differences assessment.
+          </div>
           <li>Same features as a learning differences assessment</li>
           <li>Conducted as a separate sitting</li>
           <li>
             Can be combined with your learning differences report
             retrospectively
           </li>
-        </ul>
+        </div>
       </div>
       <div class="review-box">
         <v-img :src="require('../assets/c.png')" class="pic" />
-        <h2 class="title">Follow-up support</h2>
-        <p>
-          Ongoing support appointments with your psychologist. Available as an
-          assessment add-on.
-        </p>
-        <ul class="blah">
+        <div class="title">Follow-up support</div>
+
+        <div class="blah">
+          <div>
+            Ongoing support appointments with your psychologist. Available as an
+            assessment add-on.
+          </div>
           <li>50-minute session with your psychologist</li>
           <li>General follow-up appointments</li>
           <li>School IEP and learning plan advocacy</li>
-        </ul>
+        </div>
       </div>
     </v-container>
   </v-container>
@@ -165,7 +178,6 @@
 
 <script>
 import typical from "vue-typical";
-//import Hello from "./Hello";
 
 export default {
   name: "HelloWorld",
@@ -208,122 +220,11 @@ export default {
 
   components: {
     typical,
-    //Hello,
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  background: #f8f8f8;
-}
-#app > span {
-  display: flex;
-  flex-direction: row !important;
-  justify-content: center;
-}
-.box {
-  justify-content: center;
-  background-color: f8f8f8;
-  width: 30px;
-  height: 30px;
-  margin: 1rem;
-}
-#text {
-  font-size: 22px;
-  text-align: center;
-  justify-content: center;
-  color: rgb(172, 54, 74);
-}
-
-.btn-primary {
-  opacity: 0 !important;
-}
-button.btn.btn-secondary {
-  font-size: 23px;
-  background-color: coral;
-  display: inline-block;
-  padding: 0.35em 1.2em;
-  border: 0.1em solid #ffffff;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: #ffffff;
-  text-align: center;
-  transition: all 0.2s;
-  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
-}
-.bt:hover {
-  text-shadow: 0 0 2em rgba(255, 255, 255, 1);
-  color: #ffffff;
-  border-color: #ffffff;
-}
-#space {
-  margin-top: 20px;
-}
-.wrap {
-  display: flex;
-  flex-direction: row;
-  max-height: 592px;
-}
-.review-box {
-  width: 33.33333%;
-  max-width: 528px;
-  min-height: 504px;
-  margin-left: 12px;
-  margin-right: 12px;
-  padding: 32px;
-  background-color: white;
-  text-decoration: none;
-  box-sizing: border-box;
-  width: 332px;
-  min-height: 322px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 12px;
-  padding: 24px;
-  background-color: #fff;
-  border-radius: 18px;
-  box-shadow: 0px 10px 16px -8px rgb(0 0 0 / 20%);
-}
-.title {
-  font-size: 16px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  font-weight: 700;
-  line-height: 1;
-  overflow: hidden;
-  margin-bottom: 24px;
-  font-weight: 800;
-}
-.blah {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
-  color: inherit;
-  width: 100%;
-}
-.pic {
-  display: block;
-  width: 5.313rem;
-  margin: 20px 20px 32px;
-  min-height: 72px;
-  max-height: 72px;
-  max-width: 100%;
-}
-ul.blah {
-  list-style-type: square;
-}
+@import "./landing.css";
 </style>
 
