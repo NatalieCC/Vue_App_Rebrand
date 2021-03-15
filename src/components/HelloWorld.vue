@@ -125,7 +125,7 @@
         </a>
       </v-col>
     </v-row>
-    <v-container class="wrap">
+    <v-container class="wrapper">
       <div class="review-box">
         <v-img :src="require('../assets/a.png')" class="pic" />
         <p class="title">Learning differences assessment</p>
