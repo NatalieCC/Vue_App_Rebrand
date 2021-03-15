@@ -17,21 +17,21 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld />
+      <landing />
       <About />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
 // import Reviews from "./components/Reviews";
 import About from "./components/About";
+import Landing from "./components/Landing.vue";
 export default {
   name: "App",
 
   components: {
-    HelloWorld,
+    Landing,
     About,
   },
   data: () => ({
