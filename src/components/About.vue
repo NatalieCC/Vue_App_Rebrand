@@ -4,7 +4,7 @@
       <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
       <div class="drawer__wrapper">
         <div class="drawer__header">
-          <img src="/src/assets/pLogo.png" />
+          <img src="../assets/pLogo.png" />
           <button
             class="drawer__close"
             data-drawer-close
