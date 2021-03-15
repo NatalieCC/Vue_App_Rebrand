@@ -13,7 +13,9 @@
           ></button>
         </div>
         <div class="drawer__content">
-          <h3>Who's it for</h3>
+          <h3>
+            <a href="https://hellopolygon.com/#whoisitfor">Who's it for</a>
+          </h3>
           <p>
             An assessment with a Polygon psychologist is appropriate for anyone
             age 8 or older.
@@ -25,21 +27,27 @@
             evaluation at any age can be an important step toward receiving
             proper support.
           </p>
-          <div style="padding: 50px 0"></div>
-          <h3>How it works</h3>
+          <div style="padding: 40px 0"></div>
+          <h3>
+            <a href="https://hellopolygon.com/#howitworks">How it works</a>
+          </h3>
           <p>Four simple steps to get the answers you need</p>
           <p>1. Consultation and intake</p>
           <p>2. Tele-assessments</p>
           <p>2. Report within a week</p>
           <p>2. Follow-up Support</p>
-          <div style="padding: 50px 0"></div>
-          <h3>What our custoemrs are saying</h3>
-          <!-- <div style="padding: 100px 0"></div> -->
+          <div style="padding: 40px 0"></div>
+          <h3>
+            <a href="https://hellopolygon.com/#trustpilot"
+              >What Our Customers are Saying</a
+            >
+          </h3>
+          <img src="../assets/star.png" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut
-            exercitationem laborum vero tenetur officiis facilis eveniet sunt
-            quo voluptatibus sit reiciendis, iusto quia et quidem? Dolores dolor
-            et necessitatibus.
+            I chose to have my son assessed because I’ve noticed possible
+            learning differences during distance learning. I wanted to get some
+            insights even when we don’t have the benefits of education
+            professionals observing him in person...
           </p>
         </div>
       </div>
