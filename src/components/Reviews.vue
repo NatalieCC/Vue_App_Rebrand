@@ -26,12 +26,7 @@
 
 <script>
 export default {
-  name: "Menu",
-  data() {
-    // return {
-    //   message:
-    //     "Learning differences assessment Attention differences assessment",
-    // };
-  },
+  name: "Reviews",
+  data() {},
 };
 </script>
