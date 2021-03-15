@@ -1,32 +1,19 @@
 <template>
   <v-app>
     <v-app-bar app color="#FFFFFF">
-      <div>
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
       <v-spacer></v-spacer>
-      <v-btn target="_blank" text>
-        <button
-          href="#"
-          data-drawer-trigger
-          aria-controls="drawer-name"
-          aria-expanded="false"
-          @click="openClickHandler"
-          class="about"
-        >
-          About Us
-          <!--          <v-icon>mdi-open-in-new</v-icon>-->
-        </button>
-        <!-- <child-card :settings="settings"></child-card> -->
-      </v-btn>
+      <button
+        href="#"
+        data-drawer-trigger
+        aria-controls="drawer-name"
+        aria-expanded="false"
+        @click="openClickHandler"
+        class="about"
+      >
+        About Us
+        <!--          <v-icon>mdi-open-in-new</v-icon>-->
+      </button>
+      <!-- <child-card :settings="settings"></child-card> -->
     </v-app-bar>
 
     <v-main>
@@ -113,6 +100,7 @@ export default {
   // window.addEventListener('clickHandler')
 };
 </script>
+
 <style>
 .about {
   font-size: 20px;
