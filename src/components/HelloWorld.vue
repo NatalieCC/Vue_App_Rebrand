@@ -52,6 +52,7 @@
             no-stacking
             @show="resetModal"
             @hidden="resetModal"
+            @ok="handleContinue"
           >
             <p class="my-2">What is your name?</p>
             <form ref="form">
@@ -68,9 +69,12 @@
                 ></b-form-input>
               </b-form-group>
             </form>
-            <b-button v-b-modal.modal-multi-2 v-on:click="handleSubmit"
+            <!-- <b-button
+              v-b-modal.modal-multi-2
+              v-on:click="handleSubmit"
+              id="ct-bt"
               >Comtinue</b-button
-            >
+            > -->
           </b-modal>
 
           <b-modal
@@ -78,35 +82,46 @@
             title="What is your E-mail?"
             ok-only
             no-stacking
+            @ok="handleContinue"
           >
-            <b-form-group
-              label-for="email-input"
-              invalid-feedback="Email is required"
-              :state="emailState"
-            >
-              <b-form-input
-                id="email-input"
-                v-model="email"
+            <form ref="form">
+              <b-form-group
+                label-for="email-input"
+                invalid-feedback="Email is required"
                 :state="emailState"
-                required
-              ></b-form-input>
-            </b-form-group>
-            <b-button v-b-modal.modal-multi-3>Continue</b-button>
+              >
+                <b-form-input
+                  id="email-input"
+                  v-model="email"
+                  :state="emailState"
+                  required
+                ></b-form-input>
+              </b-form-group>
+            </form>
+            <!-- <b-button v-b-modal.modal-multi-3>Continue</b-button> -->
           </b-modal>
+
           <b-modal
-            id="modal-multi-3"
+            id="modal-prevent-closing"
             size="sm"
             title="And your number?"
             ok-only
+            @ok="handleContinue"
           >
-            <b-form-input
-              id="number-input"
-              v-model="number"
-              :state="numberState"
-              required
-            ></b-form-input>
-            <div id="space"></div>
-            <b-button v-b-modal.modal-multi-3>Submit</b-button>
+            <form ref="form">
+              <b-form-group
+                label-for="number-input"
+                invalid-feedback="Please input your number"
+                :state="numberState"
+              >
+                <b-form-input
+                  id="number-input"
+                  v-model="number"
+                  :state="numberState"
+                  required
+                ></b-form-input>
+              </b-form-group>
+            </form>
           </b-modal>
         </div>
         <!-- <button class="bt" id="show-modal" @click="showHello = true">
@@ -186,15 +201,26 @@ export default {
     return {
       name: "",
       nameState: null,
-      submittedNames: [],
-      modalDisabled: false,
+      email: "",
+      emailState: null,
+      number: "",
+      numberState: null,
     };
   },
   // define methods under the `methods` object
   methods: {
     checkFormValidity() {
+      //console.log(this.$refs.form);
       const valid = this.$refs.form.checkValidity();
-      this.nameState = valid;
+      if (document.getElementById("name-input")) {
+        this.nameState = valid;
+      }
+      if (document.getElementById("email-input")) {
+        this.emailState = valid;
+      }
+      if (document.getElementById("number-input")) {
+        this.numberState = valid;
+      }
       //console.log(valid);
       return valid;
     },
@@ -208,13 +234,24 @@ export default {
       // Trigger submit handler
       this.handleSubmit();
     },
-    handleSubmit(bvModalEvt) {
+    handleSubmit() {
       // Exit when the form isn't valid
       if (!this.checkFormValidity()) {
-        this.modalDisabled = true;
-        bvModalEvt.stopPropagation();
+        // this.modalDisabled = true;
+        // bvModalEvt.stopPropagation();
         return;
       }
+      this.$nextTick(() => {
+        if (document.getElementById("name-input")) {
+          this.$bvModal.show("modal-multi-2");
+        }
+        if (document.getElementById("email-input")) {
+          this.$bvModal.show("modal-prevent-closing");
+        }
+        if (document.getElementById("number-input")) {
+          this.$bvModal.hide("modal-prevent-closing");
+        }
+      });
     },
   },
 
