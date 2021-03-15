@@ -25,7 +25,7 @@
           About Us
           <!--          <v-icon>mdi-open-in-new</v-icon>-->
         </button>
-        <child-card :settings="settings"></child-card>
+        <!-- <child-card :settings="settings"></child-card> -->
       </v-btn>
     </v-app-bar>
 
