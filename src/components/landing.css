@@ -84,6 +84,11 @@ button.btn.btn-secondary {
   flex: 1 1 auto;
   /* position: relative; */
 }
+@media only screen and (max-width: 930px){
+.review-box {
+    margin-bottom: 4%;
+}
+}
 .title {
   margin-bottom: 6px;
   font-size: 21px;
