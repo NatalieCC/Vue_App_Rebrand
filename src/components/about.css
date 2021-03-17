@@ -105,3 +105,8 @@
     .drawer.is-visible .drawer__overlay {
       opacity: 0.5;
     }
+    #star {
+      width: 13rem;
+      height: 2.5rem;
+      margin-bottom: 0.5rem;
+    }

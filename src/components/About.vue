@@ -42,7 +42,7 @@
               >What Our Customers are Saying</a
             >
           </h3>
-          <img src="../assets/star.png" />
+          <img src="../assets/star.png" id="star" />
           <p>
             I chose to have my son assessed because I’ve noticed possible
             learning differences during distance learning. I wanted to get some
