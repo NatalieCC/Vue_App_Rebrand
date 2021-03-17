@@ -59,7 +59,9 @@
       transition: transform 0.3s;
       will-change: transform;
       background-color: #fff;
-
+      background-color:beige;
+      /* background-image: url("https://img.freepik.com/free-vector/abstract-pink-polygon-banner-background_1035-19018.jpg?size=664&ext=jpg");
+      background-size: cover; */
       display: flex;
       flex-direction: column;
 
