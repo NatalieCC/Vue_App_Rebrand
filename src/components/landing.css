@@ -82,6 +82,7 @@ button.btn.btn-secondary {
   /* overflow:hidden; */
   overflow:auto;
   flex: 1 1 auto;
+  background-color:beige;
   /* position: relative; */
 }
 @media only screen and (max-width: 930px){
@@ -100,6 +101,7 @@ button.btn.btn-secondary {
 }
 .summary {
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 .blah {
   font-size: 16px;
