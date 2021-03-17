@@ -147,7 +147,7 @@
         <p class="title">Learning differences assessment</p>
 
         <div class="blah">
-          <div>
+          <div class="summary">
             Comprehensive assessment for dyslexia, dyscalculia, and other
             learning differences in reading, math, and writing.
           </div>
@@ -162,7 +162,7 @@
         <div class="title">Attention differences assessment</div>
 
         <div class="blah">
-          <div>
+          <div class="summary">
             Comprehensive assessment for ADHD. Available as an add-on to a
             specific learning differences assessment.
           </div>
@@ -179,7 +179,7 @@
         <div class="title">Follow-up support</div>
 
         <div class="blah">
-          <div>
+          <div class="summary">
             Ongoing support appointments with your psychologist. Available as an
             assessment add-on.
           </div>

@@ -95,7 +95,11 @@ button.btn.btn-secondary {
   line-height: 27px;
   color: inherit;
   width: 100%;
+  margin-bottom: 1rem;
   /* position: absolute; */
+}
+.summary {
+  margin-bottom: 1rem;
 }
 .blah {
   font-size: 16px;
